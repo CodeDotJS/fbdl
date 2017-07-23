@@ -6,6 +6,8 @@
 <br>
 </h1>
 
+> Download publicly shared videos from Facebook with an ease!
+
 ## Install
 
 ```
