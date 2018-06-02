@@ -95,7 +95,7 @@ if (arg === '-l' || arg === '--low') {
 	checkConnection();
 	got(inf).then(res => {
 		downloadMessage();
-		const data = res.body.split('sd_src_no_ratelimit:"')[1].split('",')[0];
+		const data = res.body.split('sd_src_no_ratelimit:"')[1].split('",aspect_ratio:1,')[0];
 		download(data);
 	}).catch(err => {
 		if (err) {
@@ -108,7 +108,7 @@ if (arg === '-h' || arg === '--high') {
 	checkConnection();
 	got(inf).then(res => {
 		downloadMessage();
-		const data = res.body.split('hd_src_no_ratelimit:"')[1].split('",aspect_ratio:')[0];
+		const data = res.body.split('hd_src:"')[1].split('",sd_src:"')[0];
 		download(data);
 	}).catch(err => {
 		if (err) {
