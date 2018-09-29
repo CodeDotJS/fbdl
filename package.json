@@ -1,6 +1,6 @@
 {
   "name": "fbdl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Downloading publicly shared vidoes from facebook with an ease!",
   "main": "cli.js",
   "bin": {
