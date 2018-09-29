@@ -97,8 +97,8 @@ if (arg === '-l' || arg === '--low') {
 		downloadMessage();
 		const data = res.body.split('sd_src:"')[1].split('",hd_tag')[0];
 		download(data);
-	}).catch(err => {
-		if (err) {
+	}).catch(error => {
+		if (error) {
 			showError();
 		}
 	});
@@ -110,8 +110,8 @@ if (arg === '-h' || arg === '--high') {
 		downloadMessage();
 		const data = res.body.split('hd_src:"')[1].split('",sd_src:"')[0];
 		download(data);
-	}).catch(err => {
-		if (err) {
+	}).catch(error => {
+		if (error) {
 			showError();
 		}
 	});
