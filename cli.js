@@ -56,7 +56,7 @@ const checkConnection = () => {
 			process.exit(1);
 		} else {
 			logUpdate();
-			spinner.text = `Calm down your bazooka`;
+			spinner.text = 'Calm down your bazooka';
 			spinner.start();
 		}
 	});
